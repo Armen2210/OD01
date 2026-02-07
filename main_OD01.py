@@ -91,7 +91,7 @@ print(factorial(7))
 # Если число прошло все проверки, возвращаем true.
 import math
 
-def is_ptime(number):
+def is_prime(number):
     if number <= 1:
         return False
 
@@ -100,7 +100,7 @@ def is_ptime(number):
             return False
     return True
 
-print(is_ptime(17))
+print(is_prime(17))
 
 
 # Палиндром — это строка, которая читается одинаково слева направо и справа налево
@@ -114,3 +114,12 @@ print(is_ptime(17))
 # 7) Сравни исходную и перевёрнутую строки: если s == reversed_s, то это палиндром
 # 8) Если равны — выведи/верни True (или сообщение "палиндром")
 # 9) Если не равны — выведи/верни False (или сообщение "не палиндром")
+def palindrome(s):
+    s = s.lower()
+    s = s.strip()
+    reversed_s = s[::-1]
+    if s == reversed_s:
+        return True
+    return False
+
+print(palindrome('Madam'))
