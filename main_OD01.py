@@ -65,8 +65,11 @@ def factorial(number):
 # Третий шаг: result = 2 * 3 = 6
 # Четвертый шаг: result = 6 * 4 = 24
 # Пятый шаг: result = 24 * 5 = 120
+print(factorial(1))
 print(factorial(5))
 print(factorial(7))
+print(factorial(12))
+
 
 
 # Нахождение простого числа
